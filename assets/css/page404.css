@@ -1,0 +1,152 @@
+@import url('var.css');
+@import url('cookie.css');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+    
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box  ;
+}
+    
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--light-black);
+}
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    padding: 5rem 0;
+}
+button:focus{
+    outline: none !important;
+
+}
+/* body{
+    background-color: cornflowerblue;
+} */
+    
+header{
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.header{
+    background-color: #fafafa;
+}
+.header_index.scroll{
+    background-color: #fafafa;
+} 
+.container{
+    width: 100%;
+    /* max-width: 98rem; */
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.container_header{
+    width: 100%;
+    /* max-width: 98rem; */
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .container_header_index{
+    width: 100%;
+    /* max-width: 98rem; */
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+.container_header_index.scroll{
+background-color: #fafafa;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    /* border-bottom: 1px solid rgba(255, 255, 255, .2); */
+}
+
+.nav-brand{
+    width: 3rem;
+}
+    
+.nav-brand h2{
+    color: var(--light-black);
+    transition: color 0.5s;
+}
+.nav-brand img{
+    position: absolute;
+    width: 7rem;
+    top: -0.5rem;
+    left: 0rem;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.4),rgba(0,0,0,0.4)100%),url("../img/mini_van.jpg") center,no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.box_404{
+    width: 350px;
+    height: 600px;
+    position: relative;
+    margin: 10rem auto;
+    background-color:  rgba(255,255,255,.7);
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5%;
+    text-align: center;
+}
+.box_404 .animation404{
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+.title404{
+    margin-top: 4rem;
+}
+.btn404{
+    width: 50%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 4rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: linear-gradient(to right, #00bd71,#008656);
+    box-shadow: 0 0 10px 1px var(--light-black);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.btn404:hover{
+    color: white;
+    text-decoration: none;
+}

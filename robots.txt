@@ -1,0 +1,10 @@
+User-agent: *
+allow: /
+Disallow: /user/mesannonces/
+Disallow: /user/favoris/
+Disallow: /user/inbox/
+Disallow: /user/myaccount/
+Disallow: /logout/
+
+
+Sitemap : https://www.vandreams.fr/sitemap.xml

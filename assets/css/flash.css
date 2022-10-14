@@ -1,0 +1,49 @@
+/* ***************** */
+/* ***** flash ***** */
+/* ***************** */
+
+#toats{
+    position: fixed;
+    top:8rem;
+   right: 1rem;
+    color: var(--white-fa);
+    border-radius: 4px;
+    min-width: 200px;
+    max-width: 80%;
+    font-size: 16px;
+    z-index:  1;
+    padding: 1rem;
+    box-shadow: 0 0 29px rgba(0,0,0,.3);
+    text-transform: uppercase;
+   transition: ease-in-out 650ms;
+}
+#toats.alert-danger{
+    background-color: rgba(240,52,52,.8);
+}
+#toats.alert-success{
+    background-color: rgba(0,177,106,.8) !important;
+}
+#toats.hiden{
+    visibility: hidden;
+}
+#toats .toats_headers{
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#toats .toats_die{
+   position: absolute;
+   top: 4px;
+   right: 10px;
+   color: #FFF;
+   cursor: pointer;
+}
+#toats .toats_die a{
+    text-decoration: none;
+    font-size: 0.5rem;
+}
+#toats .toats_core p{
+    font-size: 1rem;
+    font-family: var(--roboto);
+    color: #fff;
+}

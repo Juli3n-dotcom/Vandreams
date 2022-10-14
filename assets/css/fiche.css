@@ -1,0 +1,304 @@
+#showcase{
+  margin-top: 4rem;
+}
+#showcase h1{
+    font-size:50px;
+    margin-bottom:20px;
+  }
+  
+  #showcase img{
+    width:90%;
+    margin-left:20px;
+  }
+  
+  #showcase .showcase-right{
+    margin-top:90px;
+  }
+  #showcase .showcase-price{
+    background: linear-gradient(to right, #00bd71,#008656);
+    box-shadow: 0 0 10px 1px var(--light-black);
+    font-size: 16px;
+    border-radius: 2rem;
+    color: var(--white);
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+  }
+  #showcase .favoris_fiche{
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+    border: none;
+    background: none;
+    color: palevioletred;
+  }
+  #showcase .removefavori_fiche{
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+    border: none;
+    background: none;
+    color: palevioletred;
+  }
+  #showcase .noUser{
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+    border: none;
+    background: none;
+    color: palevioletred;
+  }
+  
+  #testimonial{
+    background:#f1f1f1;
+    padding: 50px 0 30px 0;
+    text-align:center;
+    margin-top:40px;
+  }
+  
+  #testimonial p{
+    font-size:20px;
+    font-family: 'Josefin Sans';
+    color:#000;
+  }
+  
+  #testimonial p.customer{
+    font-size:20px;
+    color:#666;
+  }
+  
+  #info1 .info-right{
+    margin-top:20px;
+    text-align: center;
+  }
+
+  #info2{
+    background:#f1f1f1;
+    background-size: cover;
+    /* margin:20px 0 60px 0; */
+  }
+  
+  #contact{
+    height: 600px;
+    width: 100%;
+    padding: 0 auto;
+    padding-top: 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../img/van_friend3.jpeg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  .contact_form_fiche{
+    margin-bottom: 4rem;
+  }
+
+  .noAnnonce{
+    text-align: center;
+    background-color:var(--light-gray);
+    height: 60vh;
+    position: relative;
+  }
+  .noAnnonce .noAnnoncelink{
+  position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+  .noAnnoncelink p{
+    font-size: 2rem;
+  }
+  .noAnnoncelink a{
+    background: linear-gradient(to right, #00bd71,#008656);
+    box-shadow: 0 0 10px 1px var(--light-black);
+    font-size: 1rem;
+    border-radius: 2rem;
+    color: var(--white);
+    display: block;
+    margin: auto;
+    border: 0;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+  }
+  .noAnnoncelink a:hover{
+    text-decoration: none !important;
+    color: #008656 !important;
+    background: var(--white);
+    border:1px solid #008656;
+  }
+
+  .hero_fiche{
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../img/van_friend3.jpeg');
+    background-position: center;
+    background-size: cover;
+    /* position: absolute; */
+}
+
+.form-box_fiche{
+  width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 2rem auto;
+    background-color:  rgba(255,255,255,.7);
+    padding: 5px;
+    overflow: hidden;
+}
+.hero_fiche h4{
+  text-align: center;
+  color: var(--white);
+}
+.input-group_fiche{
+  top:50px;
+  position: absolute;
+  width: 280px;
+  left: 50px;
+}
+
+#login_fiche{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../img/mini_van.jpg');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 0 auto;
+}
+#login_fiche .form-box{
+  margin: 2rem auto;
+}
+#login_fiche h3{
+  color: white;
+}
+.valideCGUfiche{
+  bottom: 60px;
+}
+
+
+/* ******************** */
+/* **** lightbox **** */
+/* ******************** */
+
+
+.portfolio-lightbox{
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   align-items: center;
+  justify-content: center;
+  /* margin-left: 15px;
+  margin-right: 15px;*/
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, .9); 
+  background-size: cover;
+  transform: scale(0,0);
+  z-index: 10;
+  /* transition: transform ease-in-out 200ms;  */
+}
+.portfolio-lightbox__content img{
+  max-width: 80vh !important;
+  max-height: 80vh;
+  position: relative;
+}
+.portfolio-lightbox:target{
+  display: flex;
+  transform: scale(1,1);
+}
+.portfolio-lightbox__content{
+  position: relative;
+}
+
+.close_lightbox{
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: url('../img/close.svg')center center / 100% no-repeat transparent;
+  top: -2em;
+  right: 1em;
+} 
+.next{
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: url('../img/next.svg') center center / 100% no-repeat transparent;
+  right: -3em;
+  top: 50%;
+}
+
+.prev{
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: url('../img/prev.svg') center center / 100% no-repeat transparent;
+  left: -3em;
+  top: 50%;
+}
+
+/* ******************** */
+/* **** Media query **** */
+/* ******************** */
+
+@media screen and (max-width: 400px){
+  .hero_fiche .form-box {
+    margin-left: -0.7rem;
+  }
+}
+
+@media screen and (min-width: 400px){
+  .input-group_fiche{
+    left: 40px;
+  }
+}
+
+@media screen and (min-width: 570px){
+  #info1 .info-right{
+    margin-top:0;
+    text-align: initial;
+  }
+}
+
+@media screen and (min-width: 700px){
+  #info1 .info-right,
+  #info2 .info-right{
+    margin-left: 50px;
+  }
+  .input-group_fiche{
+    left: 40px;
+  }
+
+  #showcase img{
+    margin-top: 10rem;
+  }
+  
+}
+
+@media screen and (min-width: 900px){
+  .form-box_fiche{
+    width: 50%;
+    padding-left: 10px;
+    
+}
+#showcase img{
+  margin-top: 6rem;
+}
+
+}
+
+@media screen and (min-width: 1000px){
+  .form-box_fiche{
+    width: 35%;
+    padding-left: 70px;
+    
+}
+.input-group_fiche{
+  left: 50px;
+}
+
+}

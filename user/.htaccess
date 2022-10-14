@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^myaccount$ profil.php
+RewriteRule ^mesannonces$ mypost.php
+RewriteRule ^inbox$ messagerie_user.php
+RewriteRule ^favoris$ myfavoris.php
+
+ErrorDocument 404 /Vandreams/oups
